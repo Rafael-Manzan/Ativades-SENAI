@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina SENAI - Serviços</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap');
+    * {
+        font-family: Caacupe One;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: bold;
+    }
+    h1 {
+        font-family: Caacupe One;
+        font-size: 70px;
+    }
+    span {
+        color: rebeccapurple;
+        text-decoration: underline;
+    }
+    div {
+        font-size: 40px;
+        border: 2px solid #999;
+        padding: 30px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    #bruh {
+        display: flex;
+        font-size: 40px;
+        border: 2px solid #999;
+        padding: 10px;
+        border-radius: 10px;
+        width: 60%; 
+    }
+</style>
+<body>
+        <header>
+            <h1>
+                <nav>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#agendar">Solicitar Agendamento</a>
+                </nav>
+            </h1>
+            <img src="img/senai_logo.png" alt="Logo do SENAI">
+        </header>
+    <main>
+        <div id = 'bruh'>
+        <div id = 'div01'>
+        <section id="Serviços">
+            <h2>Tabela de Serviços Técnicos</h2>
+            <hr>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Descrição do Serviço</th>
+                        <th>Prazo Estimado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Análise de Circuito Eletrônico</td>
+                        <td>1 dia</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Manutenção Preventiva Front-End</td>
+                        <td>2 dias</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <hr>
+        </section>
+        </div>
+        <div id = 'div02'>
+        <section id="Agendar">
+            <h2>Agendar Atendimento</h2>
+            <form action="#" method="POST">
+                <label for="nome">Nome do Aluno/Cliente:</label><br>
+                <input type="text" id="nome" name="nome"
+                required placeholder="Digite o nome completo"><br><br>
+                
+                <label for="email">E-mail Institucional</label><br>
+                <input type="email" id="email" name="email"
+                required placeholder="usuario@senai.br"><br><br>
+    
+                <label for="serviço">Selecione o Serviço</label><br>
+                <select id="serviço" name="serviço">
+                    <option value="1">Análise de Circuito Eletrônico</option>
+                    <option value="2">Manutenção Preventiva Front-End</option>
+                </select><br><br>
+    
+                <button type="submit">Enviar Solicitação</button>
+            </form>
+        </section>
+    </main>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 <span>Curso Técnico SENAI</span> - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
