@@ -23,5 +23,9 @@
 
 .header-simples .menu a {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none;  
+}
+.header-simples .menu a:hover {
+    opacity: 0.1;
+    color: orangered;
 }
